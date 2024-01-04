@@ -25,3 +25,4 @@ const myArr2=new Array(1,2,3,4)
 const myn2 = myArray.splice(1,3)
 console.log(myn2);
 console.log("B ",myArray);
+
