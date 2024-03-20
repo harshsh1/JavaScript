@@ -3,13 +3,14 @@
 
 // Reference type(Non-primitive)
 // arrays,Objects,Functions 
-
+/*
 const id=Symbol('133')   // They both have diff Id although in symbol it is 133.That's why symbol 
                           //  is used for uniqueness
-// const anotherId=Symbol('133')  // Symbol also returns a symbol datatype
-// console.log(id==anotherId)
-// console.log(typeof id);
-
+ const anotherId=Symbol('133')  // Symbol also returns a symbol datatype
+ console.log(id==anotherId)
+ console.log(typeof id);
+*/
+/*
 const heroes= ["msd","Ian Cardazo","sam"]
 let myObj={
     name:"harsh",
@@ -22,7 +23,7 @@ const myFunction=function(){
 
 console.log(typeof myFunction);
 
-
+*/
 // Memory
 // Stack(Primitive),Heap(Non-Primitive)
 
