@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaDcript</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <div class="parent">
+    
+</body>
+<script>
+    const div = document.createElement('div') // Creating a new element
+    console.log(div);
+    div.className = "main"
+    div.id =Math.round(Math.random()*10+1)
+    div.setAttribute("title","chai aur code") // Ya directly set karta ha values ko
+                                              // leka nahi aata ha
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    //div.innerText = "Harsh Sharma"  // Overwrite karata ha pehla values ko leta 
+                                    // ha phir unhe change karta ha
+    const addText = document.createTextNode("Harsh Sharma")
+    div.appendChild(addText)
+    document.body.appendChild(div) // Attaching the div to the document
+                                  // iska baad hi web page pa show hoga ussa pehla
+                                  // div ya koi bhi created element sirf memory ma hota ha
+</script>
+</html>
