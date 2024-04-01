@@ -31,7 +31,7 @@
 // target,toElement,srcElement,currentTarget
 // clientX,clientY,screenX,screenY,altkey,ctrlkey,shiftkey,keyCode
 
-
+/*
 document.getElementById('images').addEventListener('click',(e)=>
 {
    console.log("click inside the ul")
@@ -44,8 +44,24 @@ document.getElementById('owl').addEventListener('click',(e)=>
 },false) // default bhi ya hi hota ha false matlab event bubbling pehla owl hoga uska baad li hoga(chota sa bada)
         // true event capturing pehla li phir owl (bada sa chota)
  
-// Event Propagation 
-
+// Event Propagation -
+document.getElementById('google').addEventListener('click',(e)=>{
+  e.preventDefault()
+  e.stopPropagation()  //Stoping event Bubbling and capturing
+  console.log("Google Clicked")
+},false)
+*/
+document.getElementById('images').addEventListener('click',(e)=>{
+  console.log(e.target.parentNode)
+  if(e.target.tagName=== 'IMG')
+  {
+    let removeIt = e.target.parentNode
+   removeIt.remove()
+  }
+ 
+  //removeIt.parentNode.removeChild(removeIt)  // agar ma removeIt.removeChild karunga
+                                              // toh li ki sirf image mitagi li toh rahega hi 
+},false)
 
 
 </script>
